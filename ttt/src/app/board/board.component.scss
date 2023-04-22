@@ -1,0 +1,49 @@
+main {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-gap: 0px;
+}
+
+.scaledSize {
+  font-size: 3vw;
+  padding: 0 1rem;
+}
+
+app-square {
+  border: 1px gray solid;
+  height: 10vw;
+}
+
+.information {
+  display: block !important;
+  padding: 2rem;
+  text-align: center;
+}
+
+.startButton {
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  border-radius: 0.5rem;
+  transition: 0.35s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 15vw 15vw 15vw;
+  }
+
+  .scaledSize {
+    font-size: 2vw;
+  }
+
+  .startButton {
+    padding: 0.5vw;
+    font-size: 1vw;
+  }
+  app-square {
+    height: 15vw;
+  }
+}
